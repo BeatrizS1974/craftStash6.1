@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/Client/CSS/write-data.css'>
+    
+    <title>The Craft Stash</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/Client/js/config.js"></script>
+    <script src="/Client/js/write-data.js" async></script>
+</head>
+<body ng-app="addProductsApp" ng-controller="addProductsCtrl"></body>>
+    <header>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="/home">Home</a></li> 
+                <li><a href="/write-data">Enter Data</a></li>
+                <li><a href="/view-data">View Data</a></li>
+                <li><a href="/browse-data">Browse Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section id="libraryConfig_section" class="section section-inset-1 ">
+            <div class="container productForm">
+                <h1>Input Data Page</h1>
+                <div class="row">
+                    <form id="config-form" ng-submit="submitProduct()">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="productName"ng-model="productName"><br><br>
+            
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="Color" ng-model="color"><br><br>
+            
+                        <label for="manufacturer">Manufacturer:</label>
+                        <input type="text" id="manufacturer" name="ManufacturerName" ng-model="manufacturer"><br><br>
+                        
+                        <label for="productType">Product Type:</label>
+                        <input type="text" id="productType" name="ProductType"ng-model="type"><br><br>
+                        
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="Location"ng-model="location"><br><br>
+                        
+                        <label for="quantity">Quantity:</label>
+                        <input type="text" id="quantity" name="Quantity"ng-model="quantity"><br><br>
+                        
+            
+                        <div class="config-buttons">
+                            <button type="submit" id="data-submit" class="btn edit_btn">Submit</button>
+                            <button type="button" id="data-clear" class="btn edit_btn" ng-click="clearForm()">Clear</button>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </section>
+    </main>
+        
+        
+    <footer>
+        <p>&copy; 2024 Beatriz Santana</p>
+    </footer>
+
+</body>
+</html>

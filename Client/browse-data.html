@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+      <script src="./server/apps.js"></script>
+      <script src="./js/config.js"></script>
+      <script src='./js/browse-data.js'></script>
+      <title>Browse Products</title>
+      <link rel="stylesheet" href='/Client/CSS/browse-data.css'>
+  </head>
+  <body data-ng-app="browseProductsApp" data-ng-controller = "browseProductsCtrl" ></body>
+  <header>
+      <nav>
+          <ul class="nav-buttons">
+              <li><a href="/home">Home</a></li> 
+              <li><a href="/write-data">Enter Data</a></li>
+              <li><a href="/view-data">View Data</a></li>
+              <li><a href="/browse-data">Browse Data</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main class = "page-content">
+    
+    <div class="container productForm">
+      <h1>Browse Data</h1>  
+      <body data-ng-app="browseProductsApp" data-ng-controller = "browseProductsCtrl" >
+        <div style=" font-size: 30px">   
+          
+          <div>
+            <label for="productDescription">Product Name:</label>
+            <label style="margin-left: 30px; color: rgb(215, 32, 32)"  id="productName">{{obj.productName}}</label>
+          </div>
+          
+          <div>
+            <label for = "color">Color: </label>
+            <label style="margin-left: 30px; color: rgb(215, 32, 32)" id="color">{{obj.color}}</label>
+          </div>
+    
+          <div>
+            <label for = "manufacturer">Manufacturer: </label>
+            <label style="margin-left: 30px; color: rgb(215, 32, 32)" id="manufacturer">{{obj.manufacturer}}</label>
+          </div>
+    
+          <div>
+              <label for = "type">Type: </label>
+              <label style="margin-left: 30px; color: rgb(215, 32, 32)" id="type">{{obj.type}}</label>
+            </div>
+      
+            <div>
+              <label for = "location">Location: </label>
+              <label style="margin-left: 30px; color: rgb(215, 32, 32)" id="location">{{obj.location}}</label>
+            </div>
+      
+            <div>
+              <label for = "quantity">Quantity: </label>
+              <label style="margin-left: 30px; color: rgb(215, 32, 32)" id="quantity">{{obj.quantity}}</label>
+            </div>
+      
+
+
+          <div style="float:center; margin-top:30px;">
+            <div style=" float: left;">
+              <button id="previous" data-ng-click="changeProduct(-1)" data-ng-hide = "hidePrev">&lt&lt&lt Previous</button>
+            </div>
+
+            <div style=" float: left;">
+              <button id="next" data-ng-click="changeProduct(+1)"data-ng-hide = "hideNext" >Next &gt&gt&gt </button>
+            </div>
+          </div>
+      </body>
+    </div>
+  </main>    
+</html>

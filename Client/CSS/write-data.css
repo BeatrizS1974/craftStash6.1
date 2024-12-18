@@ -1,0 +1,136 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding:0;
+    background-image: url("/Client/images/artsSupplies.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+ 
+}
+.container {
+    background-color: white; 
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    flex: 10px;
+    text-align: center;
+}
+
+header {
+    background-image: url("../images/TheCraftStash.png");
+    background-size: contain; 
+    background-position: center;
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+    position: relative;
+    color: black; 
+}
+nav {
+
+    width: 100%; /* Ensure the nav takes full width */
+    background-color: #000000;
+    padding: 2px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.black-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px; 
+    padding: 0;
+}
+
+
+.nav-buttons {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-buttons li {
+    display: inline;
+}
+
+.nav-buttons a {
+    display: inline-block; 
+    padding: 5px 10px; 
+    background-color: rgba(70, 244, 160, 0.8); 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-buttons a:hover {
+    background-color: rgba(51, 193, 255, 0.8); 
+}
+
+
+/* Form styles */
+form {
+    margin: 10px 10px;
+    width: 600px;
+    
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: .5px;
+    Margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.config-buttons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 20px; /* Optional spacing from the form */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(70, 244, 160, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(51, 193, 255, 0.8);
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+}
